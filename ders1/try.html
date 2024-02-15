@@ -19,56 +19,104 @@
             color: white;
             font-size: 22px;
         }
+        a{
+            color: white;
+        }
     </style>
 
 </head>
 
 <body>
-    <h1>Merhaba Dünya :)</h1>
+    <h1>Bu yıl için planlarım</h1>
 
     <!--  hr -> Çizgi ekler-->
     <hr>
+    <ul>
+        <li><a href="#html">HTML öğrenmek</a></li>
+        <li><a href="#tatil">Tatile gitmek</a></li>
+    </ul>
+    <hr>
     
+    <section id="html">
+        <h2>Ben HTML öğreniyorum</h2>
+        <p>bu benim ilk websitem</p>
+        <h3>benim günlük rutinim</h3>
+        <p>size söyleyeyim:
+            <ol>
+                <li>Web tasarimi yapiyorum</li>
+                <li>Günümü planlarim</li>
+                <li><abbr title="Mozilla developer Network">MDN</abbr>'den faydalanirim</li>
+            </ol>
+            <!-- <br>
+            &nbsp; Web tasarimi yapiyorum
+            <br>
+            &nbsp; Günümü planlarim
+            <br>
+            abbr kısaltma için kullanılır
+            &nbsp; <abbr title="Mozilla Developer Network">MDN</abbr>'den faydalanirim -->
+        </p>
+    </section>
     
-    <h2>Ben HTML öğreniyorum</h2>
-    <p>bu benim ilk websitem</p>
-    <h3>benim günlük rutinim</h3>
-    <p>size söyleyeyim:
-        <br>
-        &nbsp; Web tasarimi yapiyorum
-        <br>
-        &nbsp; Günümü planlarim
-        <br>
-        <!-- abbr kısaltma için kullanılır-->
-        &nbsp; <abbr title="Mozilla Developer Network">MDN</abbr>'den faydalanirim
-    </p>
     <hr>
 
-    <h2>Ayrıca bir tatile gitmeyi planliyorum</h2>
+    <section id="tatil">
+        <h2>Ayrıca bir tatile gitmeyi planliyorum</h2>
 
     <!-- em -> italik yazmak için -->
     <em>çok sıkı çalıştığım için biraz rahatlamaya ihtiyacım var</em>
     <p><abbr title="Istanbul">Ist'da</abbr> yaşadığım için doğayı özledim</p>
 
     <h3>Gitmek istediğim yerler</h3>
-    <p>Samsun hakkında güzel şeyler duydum</p>
-    <p>Daha spesifik olarak şu konum hakkında:</p>
-    <address>
-        <strong>Kuş Cenneti</strong>
-        
-        <br>
-        Bafra
-        <br>
-        Samsun
-    </address>
+    <ul>
+        <li>Samsun hakkında güzel şeyler duydum</li>
+        <li>Daha spesifik olarak şu konum hakkinda:
+            
+             <ol>
+                <br>
+                <address>
+                <strong>Kuş Cenneti</strong>
+                
+                <br>
+                Bafra
+                <br>
+                Samsun
+            </address>
+               </ol> 
+           
+        </li>
+    </ul>
+   
+    
 
     <h3>Gitmek istemediğim yerler</h3>
-
+    <dl>
+        <dt>sıcak yerler</dt>
+        <dd>Sıcaktan yanmak istemiyorum</dd>
+        <dt>soğuk yerler</dt>
+        <dd>üşümek de <strong>istemiyorum</strong></dd>
+        <dt>dağlık alanlar</dt>
+        <dd>yürümesi çok zor</dd>
+    </dl>
+    <hr>
     <!-- strong -> kalın yazmayı sağlıyor-->
-    <p>tehlikeli olan herhangi bir yer <strong>imkansız</strong></p>
+    <!-- <p>tehlikeli olan herhangi bir yer <strong>imkansız</strong></p> -->
+    </section>
+    
+    <ul>
+        <li>
+            <p>paragraf elementinin kullanmım</p>
+            <code><p>&lt;p&gt;Merhaba&lt;&#47;p&gt;</p></code>
+        </li>
+        <li>
+            <p>Strong elmenti nasıl kullanılır</p>
+            <code><p>&lt;strong&gt;Merhaba&lt;&#47;strong&gt;</p></code>
+            <p>böyle yazar = <code><strong>Merhaba</strong></code></p>
+        </li>
+    </ul>
+    
 
     <hr>
-    &lt; &lt; &lt; &copy; Ahmet Said Genç &gt; &gt; &gt;
+    &lt; &lt; &lt; &copy; <a href="about_me.html">Ahmet Said Genç</a> &gt; &gt; &gt;
     
     
 </body>
