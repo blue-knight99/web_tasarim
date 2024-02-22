@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlk Websitem</title>
+
+    <!-- alttaki işlem websitesine icon resmi atamayı sağlar
+    rel -> nasıl bir ilişki içinde
+    href -> dosya nerde
+    type -> türü nedir-->
+
+    <link rel="icon" href="iconn.png" type="image/x-icon">
+
+        <!-- CSS düzenlemesi şuan için öenmli değil-->
+    <style>
+        body{
+            background-color: #333;
+            color: white;
+            font-size: 22px;
+        }
+        a{
+            color: white;
+        }
+
+        table, tr, th, td, caption{
+            font-size: 1.1em;
+            border: 1px solid #eee;
+            font-family: 'Courier New', Courier, monospace;
+            border-collapse: collapse;
+            padding: 0.5em;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h1>Bu yıl için planlarım</h1>
+
+        <!--  hr -> Çizgi ekler-->
+        <nav aria-label="primary-navigation">
+            <hr>
+            <ul>
+                <li><a href="#html">HTML öğrenmek</a></li>
+                <li><a href="#tatil">Tatile gitmek</a></li>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+   
+   <main>
+    <section id="html">
+        <h2>Ben HTML öğreniyorum</h2>
+        <p>bu benim ilk websitem</p>
+        <img src="../photos/heart_icon.jpg" alt="kalp resmi" width="200" height="200">
+        <h3>benim günlük rutinim</h3>
+        <p>size söyleyeyim:</p>
+            <ol>
+                <li>Web tasarimi yapiyorum</li>
+                <li>Günümü planlarim</li>
+                <li><abbr title="Mozilla developer Network">MDN</abbr>'den faydalanirim</li>
+            </ol>
+            <!-- <br>
+            &nbsp; Web tasarimi yapiyorum
+            <br>
+            &nbsp; Günümü planlarim
+            <br>
+            abbr kısaltma için kullanılır
+            &nbsp; <abbr title="Mozilla Developer Network">MDN</abbr>'den faydalanirim -->
+            <aside>
+                <details>
+                    <summary>Günde <mark>kaç saat</mark> çalıştığımı tahmin edin </summary>
+                    <p>Sabah 8'de kalkıp 3 saat web sitesi yapımı hakkında çalışırım</p>
+                </details>
+            </aside>
+            <br>
+            <table>
+                <caption>Benim günlük rutinim</caption>
+
+                <thead>
+                    <tr>
+                        <th>&nbsp;</th>
+                        <th scope="col">Zaman</th>
+                        <th scope="col">Aktivite</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Sabah</th>
+                        <td>
+                            <time datetime="8.00">8.00</time>
+                            <time datetime="11.00">11.00</time>
+                        </td>
+                        <td>Web sitesi</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Mola</th>
+                        <td>
+                            <time datetime="11.00">11.00</time>
+                            <time datetime="13.00">13.00</time>
+                        </td>
+                        <td>Öğlen yemeği</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Öğle</th>
+                        <td>
+                            <time datetime="13.00">13.00</time>
+                            <time datetime="17.00">17.00</time>
+                        </td>
+                        <td>Ders çalışmak</td>
+                        
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Akşam</th>
+                        <td rowspan="2">Geri kalan zamanlar</td>
+                        <td>Boş vakit</td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Gece</th>
+                        <td>Uyumak</td>
+                    </tr>
+
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Benim bir günüm işte böyle geçiyor peki ya senin :)</td>
+                        </tr>
+                    </tfoot>
+                </tbody>
+            </table>
+        
+    </section>
+    
+    <hr>
+
+    <section id="tatil">
+        <h2>Ayrıca bir tatile gitmeyi planliyorum</h2>
+
+    <!-- em -> italik yazmak için -->
+    <em>çok sıkı çalıştığım için biraz rahatlamaya ihtiyacım var</em>
+    <p><abbr title="Istanbul">Ist'da</abbr> yaşadığım için doğayı özledim</p>
+
+    <h3>Gitmek istediğim yerler</h3>
+    <ul>
+        <li>
+            
+            <p>Samsun hakkında güzel şeyler duydum</p>
+            <figure>
+                <img src="../photos/samsun_manzara.jpg" alt="samsun manzara" title="samsun manzara" loading="lazy">
+                <figcaption>Samsun'un güzel fotoğraflarından biri</figcaption>
+            </figure>
+            </li>
+        <li>
+            <p>Daha spesifik olarak şu konum hakkinda:</p>
+            
+             <ol>
+                <br>
+                <address>
+                <strong>Kuş Cenneti</strong>
+                
+                <br>
+                Bafra
+                <br>
+                Samsun
+            </address>
+               </ol> 
+               <figure>
+                <img src="../photos/kizilirmak-deltasi-kus-cenneti.png" alt="kızılırmak deltası" loading="lazy" title="kızılırmak" width="600" height="400">
+                <figcaption>Samsun Kızılırmak deltası</figcaption>
+               </figure>
+           
+        </li>
+    </ul>
+   
+    
+
+    <h3>Gitmek istemediğim yerler</h3>
+    <dl>
+        <dt>sıcak yerler</dt>
+        <dd>Sıcaktan yanmak istemiyorum</dd>
+        <dt>soğuk yerler</dt>
+        <dd>üşümek de <strong>istemiyorum</strong></dd>
+        <dt>dağlık alanlar</dt>
+        <dd>yürümesi çok zor</dd>
+    </dl>
+    <hr>
+    <!-- strong -> kalın yazmayı sağlıyor-->
+    <!-- <p>tehlikeli olan herhangi bir yer <strong>imkansız</strong></p> -->
+    </section>
+    
+    <ul>
+        <li>
+            <p>paragraf elementinin kullanmım</p>
+            <code><p>&lt;p&gt;Merhaba&lt;&#47;p&gt;</p></code>
+        </li>
+        <li>
+            <p>Strong elmenti nasıl kullanılır</p>
+            <code><p>&lt;strong&gt;Merhaba&lt;&#47;strong&gt;</p></code>
+            <p>böyle yazar = <code><strong>Merhaba</strong></code></p>
+        </li>
+    </ul>
+   </main>
+    
+    
+    <footer>
+        <hr>
+        &lt; &lt; &lt; &copy; <a href="about_me.html">Ahmet Said Genç</a> &gt; &gt; &gt;
+        <p><a href="#">Başa dön</a></p>
+    </footer>
+
+   
+
+    
+    
+    
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
